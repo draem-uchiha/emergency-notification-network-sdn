@@ -90,4 +90,10 @@ Run it again with `SDN_MODE=baseline` in Terminal 1 and compare the latency in `
 | Python is not 3.10 (e.g. Ubuntu 24.04) | Use an Ubuntu 22.04 VM |
 | `Exception: Please shut down the controller which is running on port 6653` | `sudo pkill -f ryu.cmd.manager; sudo mn -c` |
 
-Still stuck? Send the last 20 lines of the terminal output plus `results/<run folder>/ryu.out`.
+Working command in my laptop:
+
+cd ~/Downloads
+unzip -o emergency-notification-sdn.zip
+cd emergency-notification-sdn
+chmod +x setup.sh verify.sh
+./verify.sh
